@@ -1,27 +1,28 @@
-import java.util.Scanner;
-
 //*+Задано уравнение вида q + w = e, q, w, e >= 0. Некоторые цифры могут быть заменены знаком вопроса, например 2? + ?5 = 69. Требуется восстановить выражение до верного равенства. Предложить хотя бы одно решение или сообщить, что его нет.
 public class app4 {
-public static boolean check(String digit1,String qInt)
-{
-    int counterXValue=0;
-    int counterChecks=0;
-    for (int i=0;i<digit1.length();i++)
-        if(digit1.charAt(i)=='?')counterXValue++;//количество ? в числе
-    for(int i =0;i<digit1.length();i++)
-        if (digit1.charAt(i)!='?')
-            if(digit1.charAt(i)==qInt.charAt(i))
-                counterChecks++;
-    if((digit1.length()-counterXValue)==counterChecks)
-        return true;
-    return false;
-}
+    public static boolean check(String digit1,String qInt)
+    {
+//        System.out.printf("с %s, строка из счетчика %s\n",digit1,qInt);
+        if(!(digit1.length()==qInt.length()))return false;
+        int counterXValue=0;
+        int counterChecks=0;
+        for (int i=0;i<digit1.length();i++)
+            if(digit1.charAt(i)=='?')counterXValue++;//количество ? в числе
+        for(int i =0;i<digit1.length();i++)
+            if (digit1.charAt(i)!='?')
+                if(digit1.charAt(i)==qInt.charAt(i))//тут выходит за пределы массива
+                    counterChecks++;
+        if((digit1.length()-counterXValue)==counterChecks)
+            return true;
+        return false;
+    }
     public static void main(String[] args)
     {
-//        String input = "345????6?1+?4?456=1164567";
 //        String input = "3?1+?4?=1167";
-//        String input = "???1+?4=1167";
-        String input="2?+?5=69";
+        String input = "??1+?4?=1167";
+//        String input = "???1+?4?=1167";
+//        String input = "2?36+6?=2601";
+//        String input="2?+?5=69";
 //        String input ="2?4+9?=355";
         String digit1="",digit2="",result="",digit1max="",digit2max="";
         int plusPos=0, equalPos=0,qInt=0,wInt=0,eInt=0,counter=0;
