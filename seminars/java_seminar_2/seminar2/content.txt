@@ -1,0 +1,7 @@
+папка	.idea
+файл	content.txt
+файл	file.txt
+файл	log.txt
+папка	out
+файл	seminar2.iml
+папка	src
