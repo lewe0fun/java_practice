@@ -22,10 +22,10 @@ public class Main {
         HotDrinkVendingMachine vm2=new HotDrinkVendingMachine();
         HotDrinkVendingMachine vm3=new HotDrinkVendingMachine();
         HotDrinkVendingMachine vm4=new HotDrinkVendingMachine();
-        System.out.println("выдано: "+vm.getProduct("cok",100.0));
-        System.out.println("выдано: "+vm2.getProduct("кофе",100.0,250.0,45));
-        System.out.println("выдано: "+vm3.getProduct("чай",50.0,250.0));
-        System.out.println("выдано: "+vm.getProduct("вода"));
+        vm.makeProduct(vm.getProduct("cok",100.0));
+        vm2.makeProduct(vm2.getProduct("кофе",100.0,250.0,45));
+        vm3.makeProduct(vm3.getProduct("чай",50.0,250.0));
+        vm4.makeProduct(vm4.getProduct("вода"));
     }
 
 }

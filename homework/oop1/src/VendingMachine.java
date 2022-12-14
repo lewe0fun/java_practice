@@ -10,5 +10,8 @@ public class VendingMachine {
     {
         return new Product(name,cost);
     }
-
+public void makeProduct(Product p)
+{
+    System.out.println("Выдано"+p);
+}
 }
