@@ -9,12 +9,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        List<HotDrink> hotDrinks=new ArrayList<>(Arrays.asList(
+        List<Drink> hotDrinks=new ArrayList<>(Arrays.asList(
                 new HotDrink("coffee",550.0,400.0,45),
                 new HotDrink("tea",100.0,500.0,45),
                 new HotDrink("green tea",150.0,500.0,45),
-                new HotDrink("water",0.0,1000.0,70),
-                new HotDrink("cappuccino",600.0,450.0,45)));
+                new Drink("water",0.0,1000.0),
+                new HotDrink("cappuccino",600.0,450.0,45),
+                new Drink("juice",10.0,100.0)));
+
         for(var i: hotDrinks)
             System.out.println(i);
 
