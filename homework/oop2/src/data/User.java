@@ -1,22 +1,22 @@
 package data;
 
 public abstract class User {
-    private String FirstName;
+    private String firstName;
     private String lastName;
-    int id;
+    private int id;
 
     public User(String firstName, String lastName, int id) {
-        FirstName = firstName;
+        firstName = firstName;
         this.lastName = lastName;
         this.id = id;
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        firstName = firstName;
     }
 
     public String getLastName() {
