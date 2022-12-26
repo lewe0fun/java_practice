@@ -55,6 +55,6 @@ public class StudentGroupServiceImpl implements DataService<Student>{
     }
 
     public StudentGroup findStudentGroupById(int id) {
-        return studentGroupIntegerRepository.findBuId(id);
+        return studentGroupIntegerRepository.findById(id);
     }
 }

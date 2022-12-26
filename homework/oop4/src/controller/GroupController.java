@@ -20,7 +20,7 @@ public class GroupController implements Controller<StudentGroup, Integer> {
     }
 
     @Override
-    public StudentGroup findBuId(Integer id) {
+    public StudentGroup findById(Integer id) {
         return groupService.findStudentGroupById(id);
     }
 }

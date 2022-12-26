@@ -19,7 +19,7 @@ public class GroupStreamServiceImpl implements StreamService<GroupStream,Integer
     }
 
     @Override
-    public GroupStream findBuId(Integer id) {
+    public GroupStream findById(Integer id) {
         return null;
     }
 }

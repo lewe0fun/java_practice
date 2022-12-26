@@ -10,7 +10,7 @@ public class GroupRepository implements Repository<StudentGroup,Integer>{
     }
 
     @Override
-    public StudentGroup findBuId(Integer id) {
+    public StudentGroup findById(Integer id) {
         return null;
     }
 }

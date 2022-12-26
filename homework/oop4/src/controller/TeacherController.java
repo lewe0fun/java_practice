@@ -16,7 +16,7 @@ public class TeacherController implements UserController<Teacher, Integer> {
     }
 
     @Override
-    public Teacher findBuId(Integer id) {
+    public Teacher findById(Integer id) {
         return teacherService.findBuId(id);
     }
 

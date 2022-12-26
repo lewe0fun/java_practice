@@ -19,6 +19,6 @@ public class TeacherService {
     }
     public Teacher findBuId(int id)
     {
-        return teacherRepository.findBuId(id);
+        return teacherRepository.findById(id);
     }
 }
