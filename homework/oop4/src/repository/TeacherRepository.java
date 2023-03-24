@@ -10,7 +10,7 @@ public class TeacherRepository implements UserRepository<Teacher,Integer>{
     }
 
     @Override
-    public Teacher findBuId(Integer id) {
+    public Teacher findById(Integer id) {
         return null;
     }
 

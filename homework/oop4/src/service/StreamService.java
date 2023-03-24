@@ -7,5 +7,5 @@ import java.util.List;
 public interface StreamService<G extends GroupStream,I> {
  void streamSort(List<G> groupStream);
  G save (G entity);
- G findBuId(I id);
+ G findById(I id);
 }

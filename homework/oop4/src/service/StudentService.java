@@ -1,7 +1,6 @@
 package service;
 //Реализовать методы поиска и сохранения в классе TeacherService
 import data.Student;
-import data.Teacher;
 import repository.StudentRepository;
 
 public class StudentService {
@@ -20,6 +19,6 @@ public class StudentService {
     }
     public Student findBuId(int id)
     {
-        return studentRepository.findBuId(id);
+        return studentRepository.findById(id);
     }
 }

@@ -21,7 +21,7 @@ public class StreamGroupController implements Controller<GroupStream, Integer> {
     }
 
     @Override
-    public GroupStream findBuId(Integer id) {
-        return streamService.findBuId(id);
+    public GroupStream findById(Integer id) {
+        return streamService.findById(id);
     }
 }
